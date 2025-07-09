@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dev.css">
+</head>
+<body>
+<div id="top">
+    <h1 style="color:rgb(254, 254, 254);font-family:'Times New Roman', Times, serif;margin-left:600px;">Devjournal DashBoard</h1><button id="button">Log Out</button>
+    </div>
+    <br><br>
+     <h1 style="color:rgb(253, 251, 251);font-family:'Times New Roman', Times, serif;text-align:center;">Welcome!</h1>
+   <!-- <button id="button" style="margin-left:100px">Previous</button> -->
+    
+    <!-- <h1 style="color:Black;font-family:'Times New Roman', Times, serif;text-align:center;">Journal Entries</h1><br><br> -->
+ <div id="entry">
+    <h2>Add New Journal Entry</h2>
+
+  <form id="entryForm">
+    <input type="text" id="title" placeholder="Title" required><br><br>
+    <textarea id="note" placeholder="How was your day?" rows="5" required></textarea><br><br>
+    
+    <input type="text" id="tag" placeholder="Tag (Work, Health, etc.)"><br><br>
+    
+    <input type="text" id="mood" placeholder="Mood (Happy, Sad, Calm...)" required><br><br>
+    
+    <input type="number" id="energy" placeholder="Energy Level (1–10)" min="1" max="10" required><br><br>
+    
+    <button type="submit">Save Entry</button>
+  </form>
+   <div id="entryList"></div>
+
+     </div>
+
+     
+
+
+
+<script src="entries.js" ></script>
+</body>
+</html>
